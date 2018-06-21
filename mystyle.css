@@ -1,0 +1,95 @@
+body {
+    font:14px/1.8 Arial, Helvetica, sans-serif;
+    background-image:url('background.jpeg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  background-attachment: scroll;
+    
+  }
+.frame
+  {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+  }
+  .header {
+    padding:40px ;
+    text-align: center;
+    background: #fff;
+    
+  }
+  .logo {
+    
+  }
+  .container {
+    overflow: hidden;
+    background-color:#fff;
+  }
+  .nav {
+    float: left;
+    width: 150px;
+    background: #333;
+    color: #fff;
+    margin-right: 50px;
+  }
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+  }
+  .nav-item {
+    margin: 4px 0;
+  }
+  .nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 4px 10px;
+    color: #fff;
+  }
+  .nav-link:hover {
+    background: #FAF322;
+    color: #333
+  }
+  .content {
+    float: left;
+    width: 600px;
+  }
+  .footer {
+    text-align: center;
+    
+  
+    font-size: 12px;
+    background-color:#fff;
+  }
+  
+
+  table.type03 {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-left: 3px solid #369;
+   width:500px;
+   height:100px;
+}
+table.type03 th {
+  width:500px;
+  height:50px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #153d73;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+table.type03 td {
+  width:500px;
+  height:30px;
+    padding: 10px;
+    vertical-align: top;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}

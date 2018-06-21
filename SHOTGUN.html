@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <link rel="stylesheet" href="mystyle.css">
+</head>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+<script type='text/javascript'>
+	function filter(){
+		if($('#txtFilter').val()=="")
+			$("#languageTBody tr").css('display','');			
+		else{
+			$("#languageTBody tr").css('display','none');
+			$("#languageTBody tr[name*='"+$('#txtFilter').val()+"']").css('display','');
+		}
+		return false;
+	}
+</script>
+
+<body>
+<div class="frame">
+    <div class="header">
+            <div class="logo"><a href="page.html"><img src="pubg.jpg"></a></div>
+    </div>
+    
+    <div class="container">
+      <div class="nav">
+        <ul class="nav-list">
+                <li><center><strong>Menu</strong></center></li>
+                <li class="nav-item"><a href="AR.html" class="nav-link">AR</a></li>
+                <li class="nav-item"><a href="SR.html" class="nav-link">SR</a></li>
+                <li class="nav-item"><a href="SMG.html" class="nav-link">SMG</a></li>
+                <li class="nav-item"><a href="SHOTGUN.html" class="nav-link">SHOTGUN</a></li>
+                <li class="nav-item"><a href="HANDGUN.html" class="nav-link">HANDGUN</a></li>
+                <li class="nav-item"><a href="ETC.html" class="nav-link">ETC</a></li>
+              
+        </ul>
+      </div>
+      
+      <div class="content">
+            검색창: <input type='text' id='txtFilter' onkeyup='{filter();return false}' onkeypress='javascript:if(event.keyCode==13){ filter(); return false;}'>
+            
+            <h1>SHOTGUN</h1>
+            <table class="type03">
+                <center>
+                        <thead>
+                                <tr>
+                                        <td>아이콘</td>
+                                        <td>이름</td>
+                                        <td>종류</td>
+                                        <td>데미지</td>
+                                        <td>장탄수</td>
+                                        <td>탄약</td>
+                                    </tr>
+                        </thead>
+                        <tbody id='languageTBody'>
+                            
+                                <tr name='s12k'>
+                                        <th><img src="s12k.png" title="gun"></th>
+                                        <td>s12k</td>
+                                        <td>shotgun</td>
+                                        <td>198</td>
+                                        <td>5</td>
+                                        <td>12 게이지</td>
+                                    </tr>
+                                    <tr name = 's1987'>
+                                        <th><img src="s1897.png" title="gun"></th>
+                                        <td>s1897</td>
+                                        <td>shotgun</td>
+                                        <td>225</td>
+                                        <td>5</td>
+                                        <td>12 게이지</td>
+                                    </tr>
+                                    <tr name = 's686'>
+                                        <th><img src="s686.png" title="gun"></th>
+                                        <td>s686</td>
+                                        <td>shotgun</td>
+                                        <td>225</td>
+                                        <td>2</td>
+                                        <td>12 게이지</td>
+                                    </tr>
+                                    <tr name = 소드오프>
+                                        <th><img src="소드 오프.png" title="gun"></th>
+                                        <td>소드 오프</td>
+                                        <td>shotgun</td>
+                                        <td>160</td>
+                                        <td>2</td>
+                                        <td>12 게이지</td>
+                                    </tr>
+                        </tbody>
+                    </table>
+				</center>
+        
+      </div>
+    </div>
+    
+    <div class="footer">
+    </body>
+</html>

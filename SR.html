@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <link rel="stylesheet" href="mystyle.css">
+</head>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+<script type='text/javascript'>
+	function filter(){
+		if($('#txtFilter').val()=="")
+			$("#languageTBody tr").css('display','');			
+		else{
+			$("#languageTBody tr").css('display','none');
+			$("#languageTBody tr[name*='"+$('#txtFilter').val()+"']").css('display','');
+		}
+		return false;
+	}
+</script>
+
+<body>
+<div class="frame">
+    <div class="header">
+            <div class="logo"><a href="page.html"><img src="pubg.jpg"></a></div>
+    </div>
+    
+    <div class="container">
+      <div class="nav">
+        <ul class="nav-list">
+          <li><center><strong>Menu</strong></center></li>
+          <li class="nav-item"><a href="AR.html" class="nav-link">AR</a></li>
+          <li class="nav-item"><a href="SR.html" class="nav-link">SR</a></li>
+          <li class="nav-item"><a href="SMG.html" class="nav-link">SMG</a></li>
+          <li class="nav-item"><a href="SHOTGUN.html" class="nav-link">SHOTGUN</a></li>
+          <li class="nav-item"><a href="HANDGUN.html" class="nav-link">HANDGUN</a></li>
+          <li class="nav-item"><a href="ETC.html" class="nav-link">ETC</a></li>
+        </ul>
+      </div>
+      
+      <div class="content">
+            검색창: <input type='text' id='txtFilter' onkeyup='{filter();return false}' onkeypress='javascript:if(event.keyCode==13){ filter(); return false;}'>
+            
+            <h1>SR</h1>
+            <table class="type03">
+					
+					<thead>
+                            <tr>
+                                    <td>아이콘</td>
+                                    <td>이름</td>
+                                    <td>종류</td>
+                                    <td>데미지</td>
+                                    <td>장탄수</td>
+                                    <td>탄약</td>
+                                </tr>
+                    </thead>
+                    <tbody id='languageTBody'>
+                        
+                            <tr name='awm'>
+                                    <th><img src="awm.png" title="gun"></th>
+                                    <td>awm(보급전용)</td>
+                                    <td>sr</td>
+                                    <td>120</td>
+                                    <td>5</td>
+                                    <td>.300 매그넘</td>
+                                </tr>
+                                <tr name='kar98k'>
+                                    <th><img src="kar98k.png" title="gun"></th>
+                                    <td>kar98k</td>
+                                    <td>sr</td>
+                                    <td>75</td>
+                                    <td>5</td>
+                                    <td>7.62mm</td>
+                                </tr>
+                                <tr name='m24'>
+                                    <th><img src="m24.png" title="gun"></th>
+                                    <td>m24(보급전용)</td>
+                                    <td>sr</td>
+                                    <td>88</td>
+                                    <td>5</td>
+                                    <td>7.62mm</td>
+                                </tr>
+                                <tr name='mk14'>
+                                    <th><img src="mk14.png" title="gun"></th>
+                                    <td>mk14(보급전용)</td>
+                                    <td>sr</td>
+                                    <td>61</td>
+                                    <td>5</td>
+                                    <td>7.62mm</td>
+                                </tr>
+                                <tr name='sks'>
+                                    <th><img src="sks.png" title="gun"></th>
+                                    <td>sks</td>
+                                    <td>sr</td>
+                                    <td>57</td>
+                                    <td>10</td>
+                                    <td>7.62mm</td>
+                                </tr>
+                                <tr name='vss'>
+                                    <th><img src="vss.png" title="gun"></th>
+                                    <td>vss</td>
+                                    <td>sr</td>
+                                    <td>40</td>
+                                    <td>10</td>
+                                    <td>9mm</td>
+                                </tr>
+                                <tr name='mini14'>
+                                    <th><img src="mini14.png" title="gun" style="width: 50px; height: 50px;"></th>
+                                    <td>mini14</td>
+                                    <td>sr</td>
+                                    <td>45</td>
+                                    <td>20</td>
+                                    <td>5.56mm</td>
+                                </tr>
+                                <tr  name='win94'>
+                                    <th><img src="win94.png" title="gun"></th>
+                                    <td>win94</td>
+                                    <td>sr</td>
+                                    <td>66</td>
+                                    <td>8</td>
+                                    <td>.45 ACP</td>
+                                </tr>
+                    </tbody>
+                    </table>
+      </div>
+    </div>
+    
+    <div class="footer">
+    </body>
+</html>
