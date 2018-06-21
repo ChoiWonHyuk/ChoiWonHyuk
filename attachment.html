@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <link rel="stylesheet" href="mystyle.css">
+        <meta charset='UTF-8'>  
+        <style>
+                
+                #div1 {width:350px;height:135px;padding:10px;border:1px solid #999;}
+                #div2 {padding:10px; border:1px solid #999;}
+                </style>
+                <script>
+                function allowDrop(ev) {
+                    ev.preventDefault();
+                }
+                
+                function drag(ev) {
+                    ev.dataTransfer.setData("text", ev.target.id);
+                }
+                
+                function drop(ev) {
+                    ev.preventDefault();
+                    var data = ev.dataTransfer.getData("text");
+                    ev.target.appendChild(document.getElementById(data));
+                }
+                </script>
+</head>
+<body>
+<div class="frame">
+    <div class="header">
+      <div class="logo"><a href="page.html"><img src="pubg.jpg"></a></div>
+    </div>
+    
+    <div class="container">
+      <div class="nav">
+        <ul class="nav-list">
+          <li><center><strong>Menu</strong></center></li>
+          <li class="nav-item"><a href="AR.html" class="nav-link">AR</a></li>
+          <li class="nav-item"><a href="SR.html" class="nav-link">SR</a></li>
+          <li class="nav-item"><a href="SMG.html" class="nav-link">SMG</a></li>
+          <li class="nav-item"><a href="SHOTGUN.html" class="nav-link">SHOTGUN</a></li>
+          <li class="nav-item"><a href="HANDGUN.html" class="nav-link">HANDGUN</a></li>
+          <li class="nav-item"><a href="ETC.html" class="nav-link">ETC</a></li>
+          <li class="nav-item"><a href="attachment.html" class="nav-link">ATTACHMENT</a></li>
+        
+        </ul>
+      </div>
+      
+      <div class="content">
+          <h1>ATTACHMENT</h1>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="drag1" src="vertical.png" draggable="true" ondragstart="drag(event)" width="128" height="128">
+        <img id="drag1" src="angle.png" draggable="true" ondragstart="drag(event)" width="128" height="128">
+        <img id="drag1" src="2x.png" draggable="true" ondragstart="drag(event)" width="128" height="128">
+        <img id="drag1" src="4x.png" draggable="true" ondragstart="drag(event)" width="128" height="128">
+        
+        <img id="drag1" src="sra.png" draggable="true" ondragstart="drag(event)" width="128" height="128">
+        <img id="drag1" src="srb.png" draggable="true" ondragstart="drag(event)" width="128" height="128">
+        <img id="drag1" src="smga.png" draggable="true" ondragstart="drag(event)" width="128" height="128">
+        <img id="drag1" src="sos.png" draggable="true" ondragstart="drag(event)" width="128" height="128">
+        
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+    </body>
+</html>
